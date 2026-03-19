@@ -23,7 +23,7 @@ public class School {
     @OneToMany(mappedBy = "school", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JsonIgnore
 private List<Employee> employees;
-    @OneToMany(mappedBy = "school", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "school", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JsonIgnore
 private List<Class> classes;
     public School() {
