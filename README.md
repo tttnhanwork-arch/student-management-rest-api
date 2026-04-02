@@ -72,7 +72,7 @@ Spring Data REST automatically exposes endpoints:
 ## Database Setup
 
 Create database: CREATE DATABASE student_management;
-Import file: database/student_management.sql
+Import file: student_mn/student_management.sql
 
 ## Testing
 
